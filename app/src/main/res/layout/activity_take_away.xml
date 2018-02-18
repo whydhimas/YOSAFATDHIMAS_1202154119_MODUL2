@@ -52,13 +52,55 @@
         android:hint="Catatan"/>
 
     <Button
+        android:id="@+id/button_datepicker"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/edittext_catatan"
+        android:layout_alignStart="@+id/edittext_catatan"
+        android:layout_below="@+id/edittext_catatan"
+        android:layout_marginTop="26dp"
+        android:onClick="onClickDatePicker"
+        android:text="PICK THE DATE" />
+
+    <Button
+        android:id="@+id/button_timepicker"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/edittext_catatan"
+        android:layout_alignStart="@+id/edittext_catatan"
+        android:layout_below="@+id/edittext_catatan"
+        android:layout_marginTop="70dp"
+        android:onClick="onClickDatePicker"
+        android:text="PICK THE TIME" />
+
+    <Button
         android:id="@+id/button_pilih_pesanan"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="360dp"
+        android:layout_marginTop="390dp"
         android:hint="PILIH PESANAN"
         android:onClick="onClickPilihPesanan"/>
+
+    <TextView
+        android:id="@+id/textview_datepicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_datepicker"
+        android:layout_alignBottom="@+id/button_datepicker"
+        android:layout_alignEnd="@+id/edittext_catatan"
+        android:layout_alignRight="@+id/edittext_catatan"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textview_timepicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_timepicker"
+        android:layout_alignBottom="@+id/button_timepicker"
+        android:layout_alignLeft="@+id/textview_datepicker"
+        android:layout_alignStart="@+id/textview_datepicker"
+        android:text="TextView" />
 
 </RelativeLayout>
